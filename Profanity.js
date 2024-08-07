@@ -1,7 +1,7 @@
 /*-------- Profanity Filter For JS ----------*/
 class Profanity {
     constructor() {
-        const profanities = require('./profanities.json');
+        const profanities = import profanities from ('./profanities.json')
         this.profanities = profanities.profanities; //object
     }
 
